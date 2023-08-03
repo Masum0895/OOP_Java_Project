@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="citsadmin.ApproveNewCourseSceneController">
+   <children>
+      <TextField fx:id="CourseIdTextField" layoutX="113.0" layoutY="62.0" />
+      <TextField fx:id="TittleTextField" layoutX="113.0" layoutY="128.0" />
+      <TextField fx:id="CreditTextField" layoutX="113.0" layoutY="188.0" />
+      <Label layoutX="31.0" layoutY="66.0" text="Course ID :" textFill="WHITE" />
+      <Label layoutX="41.0" layoutY="132.0" text="Tittle :" textFill="WHITE" />
+      <Label layoutX="18.0" layoutY="192.0" text="No Of Credits :" textFill="WHITE" />
+      <ComboBox fx:id="CategoryComboBox" layoutX="402.0" layoutY="62.0" prefWidth="150.0" />
+      <ComboBox fx:id="TypeComboBox" layoutX="402.0" layoutY="128.0" prefWidth="150.0" />
+      <Label layoutX="332.0" layoutY="66.0" text="Category :" textFill="WHITE" />
+      <Label layoutX="343.0" layoutY="132.0" text="Type :" textFill="WHITE" />
+      <Button layoutX="248.0" layoutY="260.0" mnemonicParsing="false" onAction="#ApproveCourseOnClick" style="-fx-background-color: #89afb8;" text="Add Course" />
+   </children>
+</AnchorPane>

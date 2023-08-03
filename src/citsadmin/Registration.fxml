@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="425.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="citsadmin.RegistrationController">
+   <children>
+      <Label layoutX="22.0" layoutY="306.0" text="Course id :" textFill="WHITE" />
+      <Label layoutX="226.0" layoutY="257.0" text="Faculty Id :" textFill="WHITE" />
+      <ComboBox fx:id="SectionComboBox" layoutX="98.0" layoutY="345.0" prefHeight="25.0" prefWidth="106.0" />
+      <ComboBox fx:id="DaysComboBox" layoutX="291.0" layoutY="345.0" prefHeight="25.0" prefWidth="106.0" />
+      <ComboBox fx:id="SemesterComboBox" layoutX="472.0" layoutY="253.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="414.0" layoutY="257.0" text="Semester:" textFill="#fffcfc" />
+      <Label layoutX="28.0" layoutY="349.0" text="Section :" textFill="#fcfcfc" />
+      <Label layoutX="251.0" layoutY="349.0" text="Days :" textFill="WHITE" />
+      <Label layoutX="216.0" layoutY="14.0" text="Registration Page" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="251.0" layoutY="306.0" text="Time :" textFill="WHITE" />
+      <ComboBox fx:id="TimeComboBox" layoutX="291.0" layoutY="302.0" prefHeight="25.0" prefWidth="106.0" />
+      <Label layoutX="415.0" layoutY="302.0" text="Capacity :" textFill="WHITE" />
+      <Label layoutX="415.0" layoutY="349.0" text="Enrolled :" textFill="WHITE" />
+      <Button layoutX="237.0" layoutY="386.0" mnemonicParsing="false" onAction="#RegisterOnClick" style="-fx-background-color: #89afb8;" text="Register" />
+      <TextArea fx:id="CapacityTextArea" layoutX="472.0" layoutY="292.0" prefHeight="25.0" prefWidth="106.0" />
+      <TextArea fx:id="EnrolledTextArea" layoutX="472.0" layoutY="338.0" prefHeight="6.0" prefWidth="106.0" />
+      <TextArea fx:id="CourseListOutputTextArea" layoutX="14.0" layoutY="48.0" prefHeight="167.0" prefWidth="214.0" />
+      <TextArea fx:id="FacultyListOutputTextArea" layoutX="372.0" layoutY="48.0" prefHeight="167.0" prefWidth="214.0" />
+      <Button layoutX="61.0" layoutY="228.0" mnemonicParsing="false" onAction="#ShowCourseListOnClick" style="-fx-background-color: #89afb8;" text="Show Course List" />
+      <Button layoutX="255.0" layoutY="119.0" mnemonicParsing="false" onAction="#ShowFacultyListOnClick" prefHeight="25.0" prefWidth="113.0" style="-fx-background-color: #89afb8;" text="Show Faculty List" />
+      <TextField fx:id="CourseIdTextField" layoutX="98.0" layoutY="302.0" prefHeight="25.0" prefWidth="106.0" />
+      <TextField fx:id="FacultyIdTextField" layoutX="291.0" layoutY="253.0" prefHeight="25.0" prefWidth="106.0" />
+   </children>
+</AnchorPane>

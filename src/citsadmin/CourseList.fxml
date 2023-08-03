@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="427.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="citsadmin.CourseListController">
+   <children>
+      <Label layoutX="244.0" layoutY="24.0" text="Course List" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="outputTextArea" layoutX="30.0" layoutY="75.0" prefHeight="278.0" prefWidth="541.0" />
+      <Button layoutX="247.0" layoutY="372.0" mnemonicParsing="false" onAction="#ShowCourseListOncCick" style="-fx-background-color: #89afb8;" text="Show Course List" />
+   </children>
+</AnchorPane>
